@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Examen final practic - JavaScript Advanced-React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Acesta este Examenul Final Practic din cadrul cursului JavaScript Advanced-React
 
-## Available Scripts
+## Functionalitati
 
-In the project directory, you can run:
+* Formular de adaugare persoane in lista (check-uri la adaugare; eroare prin mesaj modal)
 
-### `npm start`
+* Pagina2: lista de utilizatori inscrisi
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Sortare si filtrare din bara din stanga
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Array-ul de utilizatori este salvat in sessionStorage - la refresh nu se pierd datele 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Pentru a rula local proiectul
 
-### `npm run build`
+1. `git clone https://github.com/danieleduardpopa/examen-practic-react.git`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. `cd proiect2-react`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. `npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. `npm start`
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Cerinte
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Începeți un proiect nou de React.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Acesta va conține următoarele pagini:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1.    Pe prima pagină (ruta /home) se va regăsi un formular cu următoarele informații: nume, prenume, meserie, salariu, data angajării (de preferat să fie data submiterii formularului).
 
-## Learn More
+    La submiterea formularului, informațiile completate de utilizator vor fi salvate, pentru a fi ulterior afișate într-o altă pagină.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ATENȚIE! Pentru salvarea state-ului trebuie să folosiți Redux!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Pe lângă butonul de submit, în pagină trebuie să se găsească și un buton care redirectează pe o altă pagină (pagina 2).
 
-### Code Splitting
+2.    În cea de-a doua pagină (ruta /people) se vor găsi persoanele introduse din formular, afișate sub formă de listă. În partea stângă a listei se vor afla 5 butoane(sau checkbox-uri): 2 precedate de titlul “Sortează după”: ” nume” și “preț” și 3 precedate de titlul “Filtrează după preț”: “<2500”, “2500-4000”, “>4000”.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+După cum le spune și numele, două butoane (checkbox-uri) vor sorta persoanele (după nume, respectiv după preț), Iar 3 butoane (checkbox-uri) vor filtra persoanele afișate, pentru intervalele de preț menționate mai sus.
 
-### Analyzing the Bundle Size
+De asemenea, pagina trebuie să conțină un buton prin care să ne întoarcem la formularul de submitere a datelor (ruta /home).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ATENȚIE! Când dăm refresh la pagina 2. sau când revenim în ea din pagina 1. persoanele trebuie sa fie afișate după ordinea inițială (Când filtrăm sau sortăm nu trebuie să pierdem array-ul inițial).
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pentru a obține punctajul maxim, pe lângă funcționalitățile de mai sus, trebuie:
+•    Să includeți și să utilizați Bootstrap (nu pierdeți prea mult timp cu stilizarea, dar măcar câteva clase de Bootstrap să apară)
+•    Să folosiți React Router pentru a construi rutele
+•    Să folosiți Redux pentru state management
