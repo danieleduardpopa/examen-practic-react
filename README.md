@@ -1,6 +1,6 @@
 # Examen final practic - JavaScript Advanced-React
 
-Acesta este Examenul Final Practic din cadrul cursului JavaScript Advanced-React
+Acesta este Examenul Final Practic din cadrul cursului JavaScript Advanced-React de la Telecom Academy
 
 ## Functionalitati
 
